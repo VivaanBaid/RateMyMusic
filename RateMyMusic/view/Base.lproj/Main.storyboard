@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jln-fd-vYe">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ur1-nm-rZ6">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqc-C0-MnJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="532.66666666666663"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24T-PK-xCv">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="458.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-e7-edE">
+                                                        <rect key="frame" x="28" y="52" width="324.66666666666669" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="04e-Cf-1jk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="113.66666666666667" height="43"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-wG-HRz">
+                                                                <rect key="frame" x="278.66666666666669" y="2" width="46" height="39.666666666666671"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="43" id="61i-fx-sI6"/>
+                                                                    <constraint firstAttribute="width" constant="46" id="bLO-j2-TR1"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uRF-D3-CE8">
+                                                        <rect key="frame" x="28" y="155" width="362" height="350"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="350" id="g0j-Of-QuP"/>
+                                                        </constraints>
+                                                        <collectionViewLayout key="collectionViewLayout" id="SQi-gf-cx4" customClass="carousel_layout" customModule="RateMyMusic" customModuleProvider="target"/>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="my_music_Cell" id="cnw-rv-YdW" customClass="music_cell" customModule="RateMyMusic" customModuleProvider="target">
+                                                                <rect key="frame" x="78" y="0.0" width="206" height="328"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OXN-oT-xEd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="206" height="328"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XjO-AH-bRM">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="206" height="328"/>
+                                                                        </imageView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st2-6z-9ox">
+                                                                            <rect key="frame" x="130" y="215.66666666666666" width="68" height="50.666666666666686"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="53.5" id="7At-0C-1JN"/>
+                                                                                <constraint firstAttribute="width" constant="68" id="VM7-90-9IC"/>
+                                                                            </constraints>
+                                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <state key="normal" backgroundImage="arrowtriangle.right.square.fill" catalog="system">
+                                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relax" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2l-AT-msG">
+                                                                            <rect key="frame" x="50.666666666666657" y="8" width="105" height="54"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="54" id="0nq-O1-Ijf"/>
+                                                                                <constraint firstAttribute="width" constant="105" id="9cx-sn-Tzi"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="XjO-AH-bRM" secondAttribute="trailing" id="0uJ-3A-wck"/>
+                                                                        <constraint firstItem="m2l-AT-msG" firstAttribute="leading" secondItem="OXN-oT-xEd" secondAttribute="leading" constant="50.5" id="I6l-bs-I7N"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="XjO-AH-bRM" secondAttribute="bottom" id="J73-5U-B6a"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="st2-6z-9ox" secondAttribute="trailing" constant="8" id="T6r-A7-sWd"/>
+                                                                        <constraint firstItem="m2l-AT-msG" firstAttribute="top" secondItem="OXN-oT-xEd" secondAttribute="top" constant="8" id="XhL-s0-fly"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="st2-6z-9ox" secondAttribute="bottom" constant="60.5" id="YoK-Aq-G6A"/>
+                                                                        <constraint firstItem="XjO-AH-bRM" firstAttribute="top" secondItem="OXN-oT-xEd" secondAttribute="top" id="gwO-Qj-HZJ"/>
+                                                                        <constraint firstItem="XjO-AH-bRM" firstAttribute="leading" secondItem="OXN-oT-xEd" secondAttribute="leading" id="ssV-hf-4tL"/>
+                                                                    </constraints>
+                                                                </collectionViewCellContentView>
+                                                                <size key="customSize" width="206" height="328"/>
+                                                                <connections>
+                                                                    <outlet property="cell_background_image" destination="XjO-AH-bRM" id="S89-a2-OmR"/>
+                                                                    <outlet property="music_title_label" destination="m2l-AT-msG" id="xgB-cm-HbC"/>
+                                                                    <outlet property="play_button" destination="st2-6z-9ox" id="QJQ-hG-ywn"/>
+                                                                </connections>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Top Charts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwM-rj-GE5">
+                                                        <rect key="frame" x="28" y="103" width="193" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="udo-jJ-Bss"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="26"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="myorange"/>
+                                                <constraints>
+                                                    <constraint firstItem="fwM-rj-GE5" firstAttribute="leading" secondItem="24T-PK-xCv" secondAttribute="leading" constant="28" id="1DX-Uz-ij6"/>
+                                                    <constraint firstItem="fwM-rj-GE5" firstAttribute="top" secondItem="9Mf-e7-edE" secondAttribute="bottom" constant="8" symbolic="YES" id="2W2-os-JZx"/>
+                                                    <constraint firstItem="9Mf-e7-edE" firstAttribute="top" secondItem="24T-PK-xCv" secondAttribute="top" constant="52" id="8C6-YK-cqc"/>
+                                                    <constraint firstItem="9Mf-e7-edE" firstAttribute="leading" secondItem="24T-PK-xCv" secondAttribute="leading" constant="28" id="AjW-Za-7NN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fwM-rj-GE5" secondAttribute="trailing" constant="169" id="F9X-uh-RjI"/>
+                                                    <constraint firstItem="uRF-D3-CE8" firstAttribute="leading" secondItem="24T-PK-xCv" secondAttribute="leading" constant="28" id="Gsq-ve-C5y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uRF-D3-CE8" secondAttribute="trailing" id="akt-lC-Q92"/>
+                                                    <constraint firstItem="uRF-D3-CE8" firstAttribute="top" secondItem="fwM-rj-GE5" secondAttribute="bottom" constant="8" symbolic="YES" id="fbi-np-zhF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uRF-D3-CE8" secondAttribute="bottom" constant="-46.329999999999998" id="fyF-eg-bnv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9Mf-e7-edE" secondAttribute="trailing" constant="37.329999999999998" id="oJq-YA-79l"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="24T-PK-xCv" secondAttribute="trailing" id="4XF-VZ-z6H"/>
+                                            <constraint firstItem="24T-PK-xCv" firstAttribute="leading" secondItem="aqc-C0-MnJ" secondAttribute="leading" id="Wtx-Cg-WSb"/>
+                                            <constraint firstAttribute="bottom" secondItem="24T-PK-xCv" secondAttribute="bottom" constant="74" id="d4S-0n-X9j"/>
+                                            <constraint firstItem="24T-PK-xCv" firstAttribute="top" secondItem="aqc-C0-MnJ" secondAttribute="top" id="w3H-dN-A23"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kuh-Ax-qKT">
+                                        <rect key="frame" x="0.0" y="532.66666666666663" width="390" height="235.33333333333337"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="106" estimatedRowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A3U-rK-vij">
+                                                <rect key="frame" x="20" y="42.000000000000014" width="370" height="185.33333333333337"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vivaan's Songs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="CqW-lq-Px5">
+                                                <rect key="frame" x="20" y="0.0" width="394" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Omb-Bh-Nxz"/>
+                                                    <constraint firstAttribute="width" constant="394" id="dE4-hi-vfM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="A3U-rK-vij" secondAttribute="bottom" constant="8" id="7Vh-i1-fIS"/>
+                                            <constraint firstAttribute="trailing" secondItem="A3U-rK-vij" secondAttribute="trailing" id="clO-LY-86m"/>
+                                            <constraint firstItem="A3U-rK-vij" firstAttribute="leading" secondItem="Kuh-Ax-qKT" secondAttribute="leading" constant="20" symbolic="YES" id="dWM-O0-oG7"/>
+                                            <constraint firstItem="A3U-rK-vij" firstAttribute="top" secondItem="CqW-lq-Px5" secondAttribute="bottom" constant="8" symbolic="YES" id="lAE-sU-r1I"/>
+                                            <constraint firstItem="CqW-lq-Px5" firstAttribute="top" secondItem="Kuh-Ax-qKT" secondAttribute="top" id="oln-eE-7L9"/>
+                                            <constraint firstItem="CqW-lq-Px5" firstAttribute="leading" secondItem="Kuh-Ax-qKT" secondAttribute="leading" constant="20" symbolic="YES" id="zhm-Ur-Zhn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ur1-nm-rZ6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jsf-UB-13n"/>
+                            <constraint firstItem="ur1-nm-rZ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WWv-a9-6Zv"/>
+                            <constraint firstItem="ur1-nm-rZ6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vAQ-a4-8jC"/>
+                            <constraint firstAttribute="bottom" secondItem="ur1-nm-rZ6" secondAttribute="bottom" constant="76" id="wJz-EJ-ImB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="music.note.house.fill" catalog="system" id="WWL-0u-8MA">
+                        <color key="badgeColor" name="myorange"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="D1c-gf-4AI"/>
+                    <connections>
+                        <outlet property="music_collection_view" destination="uRF-D3-CE8" id="YGt-VI-rFA"/>
+                        <outlet property="rounded_view" destination="24T-PK-xCv" id="Jhi-2h-zgY"/>
+                        <outlet property="users_song_outlets" destination="CqW-lq-Px5" id="VHR-nZ-6sl"/>
+                        <outlet property="your_music_table" destination="A3U-rK-vij" id="ekA-9H-dIp"/>
+                        <segue destination="K0L-jp-S9T" kind="show" identifier="addsongsegue" id="nJw-ub-rZt"/>
+                        <segue destination="YkW-TA-Cfw" kind="presentation" identifier="hometoplaysongvc" id="QmO-Yp-dga"/>
+                        <segue destination="YkW-TA-Cfw" kind="show" identifier="collectiontoplaysong" id="1ra-qL-S7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="262"/>
+        </scene>
+        <!--Play song vc-->
+        <scene sceneID="Ao8-3n-lq5">
+            <objects>
+                <viewController providesPresentationContextTransitionStyle="YES" id="YkW-TA-Cfw" customClass="play_song_vc" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H9H-9E-vFa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-Sa-clj">
+                                <rect key="frame" x="37" y="82" width="310" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thinking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh3-LW-AhB">
+                                <rect key="frame" x="37" y="516" width="222" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" name="myorange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM9-CK-VxR">
+                                <rect key="frame" x="161" y="723" width="51" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <state key="normal" backgroundImage="play.fill" catalog="system">
+                                    <color key="titleColor" name="myorange"/>
+                                </state>
+                                <connections>
+                                    <action selector="play_button_pressed:" destination="YkW-TA-Cfw" eventType="touchUpInside" id="ke1-Rh-VqG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vivaan Baid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kt-Ua-N5U">
+                                <rect key="frame" x="37" y="555" width="222" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-ZL-KAG">
+                                <rect key="frame" x="35" y="646" width="314" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS3-qO-jWC">
+                                <rect key="frame" x="302" y="723" width="51" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <state key="normal" backgroundImage="goforward.10" catalog="system">
+                                    <color key="titleColor" name="myorange"/>
+                                </state>
+                                <connections>
+                                    <action selector="seconds_ahead_pressed:" destination="YkW-TA-Cfw" eventType="touchUpInside" id="QR4-mF-wOr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU1-bl-YVm">
+                                <rect key="frame" x="28" y="723" width="51" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <state key="normal" backgroundImage="goforward.10" catalog="system">
+                                    <color key="titleColor" name="myorange"/>
+                                </state>
+                                <connections>
+                                    <action selector="_seconds_back_pressed:" destination="YkW-TA-Cfw" eventType="touchUpInside" id="WTj-f0-5Wc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAI-2j-t3c">
+                                <rect key="frame" x="297" y="507" width="56" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <state key="normal" backgroundImage="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="like_button_pressed:" destination="YkW-TA-Cfw" eventType="touchUpInside" id="xhh-Xj-qwg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wlz-8o-JNA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                        </accessibility>
+                    </view>
+                    <navigationItem key="navigationItem" id="nHF-Xj-Qo1"/>
+                    <connections>
+                        <outlet property="cover_outlet" destination="gYR-Sa-clj" id="v67-F7-Tsi"/>
+                        <outlet property="like_button_outlet" destination="iAI-2j-t3c" id="RtG-V8-XKc"/>
+                        <outlet property="play_button_outlet" destination="sM9-CK-VxR" id="QaH-OJ-P1c"/>
+                        <outlet property="seconds_back_pressed_outlet" destination="bU1-bl-YVm" id="8oY-kX-IWc"/>
+                        <outlet property="singer_name_outlet" destination="5Kt-Ua-N5U" id="35o-51-m1v"/>
+                        <outlet property="song_name_outlet" destination="Eh3-LW-AhB" id="RzD-sa-ZiB"/>
+                        <outlet property="song_progress_Slider" destination="ppY-ZL-KAG" id="n6p-bU-UTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGg-DV-Aai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.6923076923076" y="777.7251184834123"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="JQ8-BX-hdH">
+            <objects>
+                <viewController id="rFI-2F-aM0" customClass="discover_controller" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OrT-nY-EuO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="HzL-x8-5lK">
+                                <rect key="frame" x="0.0" y="37" width="390" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="search" textContentType="name"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KAI-Mj-H9c">
+                                <rect key="frame" x="0.0" y="104" width="390" height="657"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wCW-Y3-QTm">
+                                    <size key="itemSize" width="390" height="194"/>
+                                    <size key="estimatedItemSize" width="390" height="194"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="generalcollection" id="sP2-Hk-wfR" customClass="Display_music_cell" customModule="RateMyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="194"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x9s-Ww-9Xy">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="194"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPL-9q-jSO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="194"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ila-K8-JeW">
+                                                    <rect key="frame" x="0.0" y="8" width="201" height="88"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <color key="textColor" name="myorange"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="390" height="194"/>
+                                        <connections>
+                                            <outlet property="cover_page_photo" destination="VPL-9q-jSO" id="tgJ-VL-6Ta"/>
+                                            <outlet property="title" destination="ila-K8-JeW" id="iKZ-UV-n3J"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="buj-pS-pIk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Discover" id="ir1-rb-Nk4"/>
+                    <navigationItem key="navigationItem" id="FVe-WH-UC4"/>
+                    <connections>
+                        <outlet property="display_music_collection_view" destination="KAI-Mj-H9c" id="Z0Q-bs-iIE"/>
+                        <outlet property="searchbar" destination="HzL-x8-5lK" id="mLf-Wz-72G"/>
+                        <segue destination="YkW-TA-Cfw" kind="show" identifier="discovertoplaysegue" id="t4p-WG-eB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVq-09-IOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-909.23076923076917" y="946.91943127962077"/>
+        </scene>
+        <!--Register or login-->
+        <scene sceneID="yqK-Ro-tor">
+            <objects>
+                <viewController id="jln-fd-vYe" customClass="Register_or_login" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QmY-GE-r5v">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ST-R5-Arn">
+                                <rect key="frame" x="45" y="672" width="300" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sign_up_pressed:" destination="jln-fd-vYe" eventType="touchUpInside" id="qIb-wg-7gS"/>
+                                    <segue destination="o6a-lo-ooz" kind="presentation" id="BDC-4f-CW4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwk-8e-8C2">
+                                <rect key="frame" x="45" y="743" width="300" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login_pressed:" destination="jln-fd-vYe" eventType="touchUpInside" id="ntr-Of-HLx"/>
+                                    <action selector="sign_up_pressed:" destination="jln-fd-vYe" eventType="touchUpInside" id="OoU-Nn-Vbm"/>
+                                    <segue destination="KAz-XG-TBp" kind="presentation" modalPresentationStyle="fullScreen" id="Roe-N9-Zfz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i8Z-PB-2Kj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wo8-0k-NnV"/>
+                    <connections>
+                        <outlet property="login_outlet" destination="bwk-8e-8C2" id="HpW-bQ-Mvi"/>
+                        <outlet property="sign_up_outlet" destination="3ST-R5-Arn" id="2uD-tq-5Du"/>
+                        <segue destination="d8T-85-dsR" kind="show" identifier="signedinsegue" id="Dkr-Fi-XKw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhP-0v-sTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3340" y="-965"/>
+        </scene>
+        <!--Sign up vc-->
+        <scene sceneID="wd3-IJ-fBo">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="o6a-lo-ooz" customClass="Sign_up_vc" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tad-4H-kre">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aNH-Nd-H22">
+                                <rect key="frame" x="69" y="352" width="252" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drM-tS-tg1">
+                                <rect key="frame" x="69" y="309" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULL-58-drJ">
+                                <rect key="frame" x="69" y="400" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-pI-Uck">
+                                <rect key="frame" x="69" y="443" width="252" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQg-MX-yd5">
+                                <rect key="frame" x="69" y="572" width="236" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sign_up_pressed:" destination="o6a-lo-ooz" eventType="touchUpInside" id="unD-49-EA2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xEs-H6-bAt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="drM-tS-tg1" id="Ody-Fh-lUe"/>
+                        <outlet property="emailtxtfield" destination="aNH-Nd-H22" id="FaA-eS-n2n"/>
+                        <outlet property="password" destination="ULL-58-drJ" id="fYd-XJ-qbg"/>
+                        <outlet property="passwordtxtfield" destination="Pdu-pI-Uck" id="0kM-r6-Top"/>
+                        <outlet property="sign_up_outlet" destination="aQg-MX-yd5" id="NBr-gf-4oS"/>
+                        <segue destination="xDQ-QP-sua" kind="presentation" identifier="signuptowhatdowecallyousegue" modalPresentationStyle="fullScreen" id="jzz-Fa-oFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfh-RB-3f5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2994" y="89"/>
+        </scene>
+        <!--Log in vc-->
+        <scene sceneID="bt6-K0-Cio">
+            <objects>
+                <viewController id="KAz-XG-TBp" customClass="log_in_vc" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J32-9Q-ZPE">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rw6-eY-sdx">
+                                <rect key="frame" x="69" y="380" width="252" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qce-4x-8BB">
+                                <rect key="frame" x="69" y="439" width="252" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCU-p5-F4L">
+                                <rect key="frame" x="69" y="590" width="270" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="log_in_pressed:" destination="KAz-XG-TBp" eventType="touchUpInside" id="bwP-wh-B5i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Boc-dS-KIc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailtxtfield" destination="rw6-eY-sdx" id="eUV-iG-djk"/>
+                        <outlet property="passwordtxtfield" destination="qce-4x-8BB" id="bXz-yh-xdR"/>
+                        <segue destination="d8T-85-dsR" kind="presentation" identifier="logintohome" modalPresentationStyle="fullScreen" id="85A-n4-p0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5w-Gk-Zha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2810.7692307692305" y="905.68720379146919"/>
+        </scene>
+        <!--What Do we call you-->
+        <scene sceneID="o6S-o9-gzQ">
+            <objects>
+                <viewController id="xDQ-QP-sua" customClass="what_Do_we_call_you" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GmM-Ya-YZE">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do we call you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-9N-Xa7">
+                                <rect key="frame" x="0.0" y="289" width="390" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ih-h9-XmX">
+                                <rect key="frame" x="63" y="421" width="257" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD0-Jr-k8F">
+                                <rect key="frame" x="68" y="611" width="246" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="That's me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="that_is_me_pressed:" destination="xDQ-QP-sua" eventType="touchUpInside" id="2cb-4y-vID"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AGd-6e-naO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="yourname" destination="3ih-h9-XmX" id="Uqi-px-hyI"/>
+                        <segue destination="d8T-85-dsR" kind="presentation" identifier="whatdowecalltohome" modalPresentationStyle="fullScreen" id="Xr0-PC-bjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6KS-Pf-aNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006.1538461538462" y="76.777251184834114"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ncp-ca-DUI">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="d8T-85-dsR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mWq-kD-2jr"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3hg-B3-Z6L" customClass="AppTabBar" customModule="RateMyMusic" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="myorange"/>
+                        <color key="barTintColor" name="myorange"/>
+                        <color key="selectedImageTintColor" name="myorange"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9gQ-Yi-2Kw"/>
+                        <segue destination="rFI-2F-aM0" kind="relationship" relationship="viewControllers" id="Mwc-Pe-Yfb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbi-iT-BtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="97"/>
+        </scene>
+        <!--Addsong vc-->
+        <scene sceneID="QFM-4T-wmw">
+            <objects>
+                <viewController id="K0L-jp-S9T" customClass="addsong_vc" customModule="RateMyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6A-WH-Ri9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-m0-NL7">
+                                <rect key="frame" x="13" y="141" width="361" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" name="myorange"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvR-Ev-co7">
+                                <rect key="frame" x="323" y="10" width="51" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Publish">
+                                    <color key="titleColor" name="myorange"/>
+                                </state>
+                                <connections>
+                                    <action selector="publish_pressed:" destination="K0L-jp-S9T" eventType="touchUpInside" id="7Jr-zh-apt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-K2-fig">
+                                <rect key="frame" x="16" y="80" width="358" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fs8-IC-vRv">
+                                <rect key="frame" x="147" y="208" width="97" height="87.999999999999986"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                                <state key="normal" backgroundImage="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="add_cover_photo_pressed:" destination="K0L-jp-S9T" eventType="touchUpInside" id="eVo-d1-zNA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-MV-Jyg">
+                                <rect key="frame" x="13" y="391" width="361" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="myorange"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Upload music">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="upload_song_pressed:" destination="K0L-jp-S9T" eventType="touchUpInside" id="WFf-O3-01t"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-2h-2LG">
+                                <rect key="frame" x="13" y="58" width="361" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="myorange"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsM-oP-ipW">
+                                <rect key="frame" x="13" y="10" width="51" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" name="myorange"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel_pressed:" destination="K0L-jp-S9T" eventType="touchUpInside" id="dP6-Dx-bMX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Do-NU-wgb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cbU-O6-bgg"/>
+                    <connections>
+                        <outlet property="add_cover_photo_button_outlet" destination="Fs8-IC-vRv" id="7kS-G0-IR5"/>
+                        <outlet property="cover_photo_display" destination="XUd-m0-NL7" id="yxG-tB-ky1"/>
+                        <outlet property="publish_button_outlet" destination="GvR-Ev-co7" id="wsa-QU-rxL"/>
+                        <outlet property="song_uploaded_progress" destination="4rg-2h-2LG" id="66T-WU-QPI"/>
+                        <outlet property="songname_txt_field" destination="Hbk-K2-fig" id="r45-4O-Yfy"/>
+                        <outlet property="upload_song_outlet" destination="EmO-MV-Jyg" id="Mgc-wF-QVC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZz-kd-imF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.07692307692309" y="-60.426540284360186"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3hg-B3-Z6L">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xr0-PC-bjI"/>
+        <segue reference="QmO-Yp-dga"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrowtriangle.right.square.fill" catalog="system" width="128" height="114"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="goforward.10" catalog="system" width="121" height="128"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="music.note.house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <namedColor name="myorange">
+            <color red="0.96299999952316284" green="0.44699999690055847" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
